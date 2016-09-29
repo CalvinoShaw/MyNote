@@ -1,0 +1,31 @@
+.hiderow{
+	display:none;
+}
+.form-label{
+	text-align: left !important;
+	width: 100px !important;
+}
+.form-inputs{
+	margin-left: 100px !important;
+}
+.form-selected{
+	width: 100% !important;
+}
+.login_title_h1{
+	text-align:center !important;
+}
+#username, #password{
+	width:265px !important;
+}
+#username_tip, #password_tip{
+	color:red !important;
+	display:none !important;
+}
+#financial_new_f_type_check, #financial_new_f_amount_check, #note_new_n_type_check, #note_new_n_name_check{
+	color:red !important;
+	text-align:left !important;
+	display:none ;
+}
+#login_form_btn_login{
+	margin-left:90px !important;
+}
