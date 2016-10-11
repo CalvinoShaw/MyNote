@@ -1,0 +1,33 @@
+﻿.hiderow{
+	display:none;
+}
+.form-label{
+	text-align: left !important;
+	width: 100px !important;
+}
+.form-inputs{
+	margin-left: 100px !important;
+}
+.form-selected{
+	width: 100% !important;
+}
+.login_title_h1{
+	text-align:center !important;
+}
+#login_form_btn_login{
+	margin-left:90px !important;
+}
+
+/*为登录注册页面添加 text-shadow 与 box-shadow*/
+.container{
+	margin-top: 70px;
+}
+.container h1, .container h1 small{
+	color:white;
+	text-shadow: 3px 3px 50px #FF0000;
+}
+.container form{
+	-webkit-box-shadow: 3px 3px 150px 10px #ff9;
+	-moz-box-shadow: 3px 3px 150px 10px #ff9;
+	box-shadow: 3px 3px 150px 10px #ff9;
+}
