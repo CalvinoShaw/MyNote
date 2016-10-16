@@ -1,4 +1,8 @@
-﻿.hiderow{
+﻿body{
+	vertical-align: middle;
+}
+
+.hiderow{
 	display:none;
 }
 .form-label{
