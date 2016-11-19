@@ -82,6 +82,17 @@
     <servlet-name>NoteServlet</servlet-name>
     <url-pattern>/note_delete_do.do</url-pattern>
   </servlet-mapping>
+  
+  <!-- 过滤器 -->
+  <filter>
+	<filter-name>filterForLoginAndDecode</filter-name>
+	<filter-class>filter.filterForLoginAndDecode</filter-class>
+  </filter>
+  <filter-mapping>
+	<filter-name>filterForLoginAndDecode</filter-name>
+	<url-pattern>/*.jsp</url-pattern>
+  </filter-mapping>
+
 
  <login-config>
   <auth-method>BASIC</auth-method>
