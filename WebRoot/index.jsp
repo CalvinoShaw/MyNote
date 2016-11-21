@@ -80,6 +80,13 @@
 								<input type="text" class="search-query span2" placeholder="搜索" />
 							</form>
 							<ul class="nav pull-right">
+<%
+	int count = listener.sessionListener.getCount();
+	//out.println("在线人数："+count);
+%>
+								<li>
+									<a href="">当前在线人数：<%=count %></a>
+								</li>
 								<li>
 									<a href="">@卡尔维诺</a>
 								</li>
@@ -176,8 +183,8 @@
                     <ul class="pager">
 						<li class="next">
 							版权所有 - 2016 @ 卡尔维诺
-							<a href="" title="模板之家" target="_blank" >Fackbook</a>
-							<a href="" title="网页模板" target="_blank">Twitter</a>
+							<a href="" title="" target="_blank" >Fackbook</a>
+							<a href="" title="" target="_blank">Twitter</a>
 						</li>
 					</ul>
 				</div>

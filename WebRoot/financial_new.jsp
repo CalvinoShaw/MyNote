@@ -79,6 +79,13 @@
 								<input type="text" class="search-query span2" placeholder="搜索" />
 							</form>
 							<ul class="nav pull-right">
+<%
+	int count = listener.sessionListener.getCount();
+	//out.println("在线人数："+count);
+%>
+								<li>
+									<a href="">当前在线人数：<%=count %></a>
+								</li>
 								<li>
 									<a href="">@卡尔维诺</a>
 								</li>

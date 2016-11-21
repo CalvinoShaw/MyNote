@@ -78,6 +78,13 @@
 								<input type="text" class="search-query span2" placeholder="搜索" />
 							</form>
 							<ul class="nav pull-right">
+<%
+	int count = listener.sessionListener.getCount();
+	//out.println("在线人数："+count);
+%>
+								<li>
+									<a href="">当前在线人数：<%=count %></a>
+								</li>
 								<li>
 									<a href="">@卡尔维诺</a>
 								</li>
@@ -146,8 +153,8 @@
 							<div class="thumbnail">
 								<img src="img/tmp/260x180.gif" alt="" />
 								<div class="caption">
-									<h5>Thumbnail label</h5>
-									<p>Thumbnail caption right here...</p>
+									<h5>瀑布流</h5>
+									<p>待定瀑布流</p>
 								</div>
 							</div>
 						</li>
@@ -155,8 +162,8 @@
 							<div class="thumbnail">
 								<img src="img/tmp/260x180.gif" alt="" />
 								<div class="caption">
-									<h5>Thumbnail label</h5>
-									<p>Thumbnail caption right here...</p>
+									<h5>瀑布流</h5>
+									<p>待定瀑布流</p>
 								</div>
 							</div>
 						</li>
@@ -164,8 +171,8 @@
 							<div class="thumbnail">
 								<img src="img/tmp/260x180.gif" alt="" />
 								<div class="caption">
-									<h5>Thumbnail label</h5>
-									<p>Thumbnail caption right here...</p>
+									<h5>瀑布流</h5>
+									<p>待定瀑布流</p>
 								</div>
 							</div>
 						</li>
@@ -173,8 +180,8 @@
 							<div class="thumbnail">
 								<img src="img/tmp/260x180.gif" alt="" />
 								<div class="caption">
-									<h5>Thumbnail label</h5>
-									<p>Thumbnail caption right here...</p>
+									<h5>瀑布流</h5>
+									<p>待定瀑布流</p>
 								</div>
 							</div>
 						</li>
@@ -182,8 +189,8 @@
 							<div class="thumbnail">
 								<img src="img/tmp/260x180.gif" alt="" />
 								<div class="caption">
-									<h5>Thumbnail label</h5>
-									<p>Thumbnail caption right here...</p>
+									<h5>瀑布流</h5>
+									<p>待定瀑布流</p>
 								</div>
 							</div>
 						</li>
@@ -191,8 +198,8 @@
 							<div class="thumbnail">
 								<img src="img/tmp/260x180.gif" alt="" />
 								<div class="caption">
-									<h5>Thumbnail label</h5>
-									<p>Thumbnail caption right here...</p>
+									<h5>瀑布流</h5>
+									<p>待定瀑布流</p>
 								</div>
 							</div>
 						</li>
