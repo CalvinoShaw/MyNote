@@ -4,13 +4,7 @@
 <%@ page import="vo.Financial_formVO" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.Iterator" %>
-<% 
-	String uid = (String)session.getAttribute("uid");
-	if(uid==null){
-		response.sendRedirect("login.jsp");
-		return;
-	}
-%>
+
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html lang="en" class="ie6 ielt7 ielt8 ielt9"><![endif]--><!--[if IE 7 ]><html lang="en" class="ie7 ielt8 ielt9"><![endif]--><!--[if IE 8 ]><html lang="en" class="ie8 ielt9"><![endif]--><!--[if IE 9 ]><html lang="en" class="ie9"> <![endif]--><!--[if (gt IE 9)|!(IE)]><!--> 
 <html lang="en"><!--<![endif]--> 
@@ -83,13 +77,7 @@
 								<input type="text" class="search-query span2" placeholder="搜索" />
 							</form>
 							<ul class="nav pull-right">
-<%
-	int count = listener.sessionListener.getCount();
-	//out.println("在线人数："+count);
-%>
-								<li>
-									<a href="">当前在线人数：<%=count %></a>
-								</li>
+
 								<li>
 									<a href="">@卡尔维诺</a>
 								</li>

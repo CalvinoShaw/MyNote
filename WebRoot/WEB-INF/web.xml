@@ -1,106 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+<web-app version="3.0"
+		 xmlns="http://java.sun.com/xml/ns/javaee" 
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+							 http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	  
+	<display-name>
+	</display-name>	
 
-  <!-- 全体 Servlet -->
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>UserServlet</servlet-name>
-    <servlet-class>servlet.UserServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>ScheduleServlet</servlet-name>
-    <servlet-class>servlet.ScheduleServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>FinancialServlet</servlet-name>
-    <servlet-class>servlet.FinancialServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>NoteServlet</servlet-name>
-    <servlet-class>servlet.NoteServlet</servlet-class>
-  </servlet>
+	
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
 
 
-  
-  <!-- UserServlet 映射关系 -->
-  <servlet-mapping>
-    <servlet-name>UserServlet</servlet-name>
-    <url-pattern>/login_do.do</url-pattern>
-  </servlet-mapping>
-  
-  
-  <!-- ScheduleServlet 映射关系 -->
-  <servlet-mapping>
-    <servlet-name>ScheduleServlet</servlet-name>
-    <url-pattern>/schedule_new_do.do</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>ScheduleServlet</servlet-name>
-    <url-pattern>/schedule_update_do.do</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>ScheduleServlet</servlet-name>
-    <url-pattern>/schedule_delete_do.do</url-pattern>
-  </servlet-mapping>
-  
-  
-  
-  <!-- FinancialServlet 映射关系 -->
-  <servlet-mapping>
-    <servlet-name>FinancialServlet</servlet-name>
-    <url-pattern>/financial_new_do.do</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>FinancialServlet</servlet-name>
-    <url-pattern>/financial_update_do.do</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>FinancialServlet</servlet-name>
-    <url-pattern>/financial_delete_do.do</url-pattern>
-  </servlet-mapping>
-  
-  
-  
-  <!-- NoteServlet 映射关系 -->
-  <servlet-mapping>
-    <servlet-name>NoteServlet</servlet-name>
-    <url-pattern>/note_new_do.do</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>NoteServlet</servlet-name>
-    <url-pattern>/note_update_do.do</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>NoteServlet</servlet-name>
-    <url-pattern>/note_delete_do.do</url-pattern>
-  </servlet-mapping>
-  
-  <!-- 过滤器 -->
-  <filter>
-	<filter-name>filterForLoginAndDecode</filter-name>
-	<filter-class>filter.filterForLoginAndDecode</filter-class>
-  </filter>
-  <filter-mapping>
-	<filter-name>filterForLoginAndDecode</filter-name>
-	<url-pattern>/index.jsp</url-pattern>
-  </filter-mapping>
-  
-  <!-- 监听器 -->
-  <listener>
-      <description>session监听器</description>
-      <listener-class>listener.sessionListener</listener-class>
-  </listener>
+	
+	<!-- 全体 Servlet -->
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>servlet.UserServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ScheduleServlet</servlet-name>
+		<servlet-class>servlet.ScheduleServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>FinancialServlet</servlet-name>
+		<servlet-class>servlet.FinancialServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>NoteServlet</servlet-name>
+		<servlet-class>servlet.NoteServlet</servlet-class>
+	</servlet>
+
+	
+
+	<!-- UserServlet 映射关系 -->
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/login_do.do</url-pattern>
+	</servlet-mapping>
 
 
- <login-config>
-  <auth-method>BASIC</auth-method>
- </login-config>
+	
+	<!-- ScheduleServlet 映射关系 -->
+	<servlet-mapping>
+		<servlet-name>ScheduleServlet</servlet-name>
+		<url-pattern>/schedule_new_do.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ScheduleServlet</servlet-name>
+		<url-pattern>/schedule_update_do.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ScheduleServlet</servlet-name>
+		<url-pattern>/schedule_delete_do.do</url-pattern>
+	</servlet-mapping>
+
+
+
+	<!-- FinancialServlet 映射关系 -->
+	<servlet-mapping>
+	<servlet-name>FinancialServlet</servlet-name>
+	<url-pattern>/financial_new_do.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	<servlet-name>FinancialServlet</servlet-name>
+	<url-pattern>/financial_update_do.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	<servlet-name>FinancialServlet</servlet-name>
+	<url-pattern>/financial_delete_do.do</url-pattern>
+	</servlet-mapping>
+
+
+
+	<!-- NoteServlet 映射关系 -->
+	<servlet-mapping>
+		<servlet-name>NoteServlet</servlet-name>
+		<url-pattern>/note_new_do.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>NoteServlet</servlet-name>
+		<url-pattern>/note_update_do.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>NoteServlet</servlet-name>
+		<url-pattern>/note_delete_do.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- 过滤器 -->
+	<filter>
+		<filter-name>filterForLoginAndDecode</filter-name>
+		<filter-class>filter.filterForLoginAndDecode</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>filterForLoginAndDecode</filter-name>
+		<url-pattern>/index.jsp</url-pattern>
+	</filter-mapping>
+
+
+	<login-config>
+		<auth-method>BASIC</auth-method>
+	</login-config>
+	
+	
 </web-app>
