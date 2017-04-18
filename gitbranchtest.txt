@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 windows test
+=======
+mac input
+>>>>>>> 329dd2e02b06757abc10d48550f73f628fd52fd5
