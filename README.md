@@ -7,16 +7,16 @@
 
 ### 涉及技术与简要说明：
 
- 1. JavaWeb MVC，src 部分模型如下：
+ 1. JavaWeb MVC，`src` 部分模型如下：
     src
-    |___DAO
-    |___DTO
-    |___service
-    |___servlet
-    |___tools
-    |___vo
+      |___DAO
+      |___DTO
+      |___service
+      |___servlet
+      |___tools
+      |___vo
  2. 少量的CSS3，少量的jQuery
- 3. 项目初构建时采用 Bootstrap 2.0.2，目前仅 login.html 使用 Bootstrap 3 重建
+ 3. 项目初构建时采用 Bootstrap 2.0.2，目前仅 `login.html` 使用 Bootstrap 3 重建
 
 ----------
 
